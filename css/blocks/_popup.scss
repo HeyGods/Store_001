@@ -1,0 +1,181 @@
+.popup {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    transition: alls 0.3s;
+    transform: translateX(-100%);
+    .position {
+        width: calc(100% - 30px);
+        max-width: 610px;
+        margin: 0 auto;
+    }
+    .inner {
+        position: relative;
+        width: 70%;
+        height: 100%;
+        margin-left: -15px;
+        background-color: #fff;
+        transform: translate3d(-100%, 0px, 0px);
+        transition-property: transform;
+        transition-duration: 0.3s;
+        z-index: 2;
+    }
+    .p-body {
+        padding: 0 15px 10px;
+        max-height: calc(100vh - 44px);
+        // overflow-y: scroll;
+    }
+    .overlay {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+    }
+    &.active {
+        transform: translateX(0);
+        .inner {
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+    &.half {
+        display: flex;
+        // align-items: center;
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+.menu__cart {
+    margin-bottom: 25px;
+    ul {
+        display: inline-block;
+        margin-right: 20px;
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 15px;
+            a {
+                position: relative;
+                i {
+                    font-size: 18px;
+                    color: #1c1c1c;
+                }
+                span {
+                    height: 13px;
+                    width: 13px;
+                    background: #7fad39;
+                    font-size: 10px;
+                    color: #ffffff;
+                    line-height: 13px;
+                    text-align: center;
+                    font-weight: 700;
+                    display: inline-block;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -5;
+                    right: -12px;
+                }
+            }
+        }
+    }
+    .header__cart__price {
+        font-size: 14px;
+        color: #6f6f6f;
+        display: inline-block;
+        span {
+            color: #252525;
+            font-weight: 700;
+        }
+    }
+}
+
+.menu__widget {
+    // margin-bottom: 20px;
+    .header__language {
+        position: relative;
+        display: inline-block;
+        margin-right: 40px;
+        cursor: pointer;
+        img {
+            margin-right: 6px;
+        }
+        div {
+            font-size: 14px;
+            color: #1c1c1c;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        span {
+            font-size: 14px;
+            color: #1c1c1c;
+            position: relative;
+            top: 2px;
+            font-family: "ElegantIcons";
+        }
+        ul {
+            background: #222222;
+            width: 100px;
+            text-align: left;
+            padding: 5px 0;
+            position: absolute;
+            left: 0;
+            top: 43px;
+            z-index: 9;
+            // opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all, 0.3s;
+            -moz-transition: all, 0.3s;
+            -ms-transition: all, 0.3s;
+            -o-transition: all, 0.3s;
+            transition: all, 0.3s;
+            li {
+                list-style: none;
+                a {
+                    font-size: 14px;
+                    color: #ffffff;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+    .header__language:after {
+        position: absolute;
+        right: -21px;
+        top: 1px;
+        height: 20px;
+        width: 1px;
+        background: #000000;
+        opacity: 0.1;
+        content: "";
+    }
+    .header__auth {
+        display: inline-block;
+        a {
+            display: block;
+            font-size: 14px;
+            color: #1c1c1c;
+            i {
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+//change langgue
+#change_langgue:hover + #langgue {
+    visibility: visible;
+}
+
+#a:hover + #b {
+    background: #ccc
+}

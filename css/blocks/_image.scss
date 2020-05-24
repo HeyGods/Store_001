@@ -1,0 +1,132 @@
+.back-ground-banner {
+    background: url("/images/banner.jpg");
+}
+
+.hero__item {
+    height: 431px;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.hero__text span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #7fad39;
+}
+
+.hero__text h2 {
+    font-size: 46px;
+    color: #252525;
+    line-height: 52px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-slide {
+    // margin: 0 auto;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.slide {
+    min-width: 100%;
+    position: relative;
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+
+.fix-width {
+    width: 100%;
+}
+
+.slide {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.slide-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#next-btn,
+#prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: #a9a9a9;
+}
+#next-btn:focus,
+#prev-btn:focus {
+    outline: none;
+}
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: white;
+}
+
+h5 {
+    > a {
+        font-size: 18px;
+        color: #1c1c1c;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 12px 0 10px;
+        background-color: #ffffff;
+        display: block;
+        border-radius: 12px;
+        border: 1px solid #ededed;
+    }
+}
+
+.title__product {
+    text-align: center;
+    margin-top: 40px;
+    h2:after {
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        right: 0;
+        height: 4px;
+        width: 80px;
+        background: #7fad39;
+        content: "";
+        margin: 0 auto;
+    }
+}

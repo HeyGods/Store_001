@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="./index.html" class="header__left"><img src="./images/logo.png" alt=""></a>
+        <div class="humberger__open trigger-popup" data-popup="popup-send-code">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+    <div class="container fix-header fix-bottom">
+        <div class="">
+            <select class="select">
+                <option value="0">All departments</option>
+                <option value="1">Fresh Meat</option>
+                <option value="2">Vegetables</option>
+                <option value="3">Fruit &amp; Nut Gifts</option>
+                <option value="4">Fresh Berries</option>
+                <option value="5">Ocean Foods</option>
+                <option value="6">Butter &amp; Eggs</option>
+                <option value="7">Fastfood</option>
+                <option value="8">Fresh Onion</option>
+                <option value="9">Papayaya &amp; Crisps</option>
+                <option value="10">Oatmeal</option>
+                <option value="11">Fresh Bananas</option>
+            </select>
+        </div>
+
+        <div class="fix-top-20">
+            <input type="text" class="txt-search" name="code" id="code" placeholder="What do you need?">
+            <input type="button" id="certificate" class="btn-search" value="SEARCH">
+        </div>
+
+
+        <div class="hero__item set-bg back-ground-banner fix-top-20">
+            <div class="hero__text">
+                <span>FRUIT FRESH</span>
+                <h2>Vegetable <br>100% Organic</h2>
+                <p>Free Pickup and Delivery Available</p>
+                <a href="#" class="primary-btn">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="container-slide fix-top-20">
+            <div class="slides">
+                <div class="slide">
+                    <div class="fix-width">
+                        <img src="./images/cat-1.jpg" alt="" />
+                        <h5 class="center">
+                            <a href="#">Fresh Fruit</a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="fix-width">
+                        <img src="./images/cat-2.jpg" alt="" />
+                        <h5 class="center">
+                            <a href="#">Fresh Fruit</a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="fix-width">
+                        <img src="./images/cat-3.jpg" alt="" />
+                        <h5 class="center">
+                            <a href="#">Fresh Fruit</a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="fix-width">
+                        <img src="./images/cat-4.jpg" alt="" />
+                        <h5 class="center">
+                            <a href="#">Fresh Fruit</a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="fix-width">
+                        <img src="./images/cat-5.jpg" alt="" />
+                        <h5 class="center">
+                            <a href="#">Fresh Fruit</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-controls">
+                <button id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="title__product">
+            <h2>Featured Product</h2>
+        </div> -->
+        <!-- <div class="categories__item set-bg">
+            <h5><a href="#">drink fruits</a></h5>
+        </div> -->
+
+    </div>
+
+    <!-- Popup send code -->
+    <div class="popup half popup-send-code">
+        <div class="position">
+            <div class="inner">
+                <div class="p-body">
+                    <div class="menu__cart">
+                        <ul class="fix-top-20">
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                    </div>
+
+                    <div class="menu__widget">
+                        <div class="header__language">
+                            <img src="./images/language.png" alt="">
+                            <div id="change_langgue">English</div>
+                            <ul id="langgue">
+                                <li><a href="#">Vietnamese</a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                            <span class=""><i class="fas fa-chevron-down"></i></span>
+                            <!-- <div id="a">Div A</div>
+                            <div id="b">Div B</div> -->
+                        </div>
+                        <div class="header__auth">
+                            <a href="#"><i class="fa fa-user"></i> Login</a>
+                        </div>
+                    </div>
+
+                    <div class="slicknav_menu">
+                        <!-- <a href="#" aria-haspopup="true" role="button" tabindex="0"
+                            class="slicknav_btn slicknav_collapsed" style="outline: none;">
+                            <span class="slicknav_menutxt">MENU</span>
+                            <span class="slicknav_icon">
+                                <span class="slicknav_icon-bar"></span>
+                                <span class="slicknav_icon-bar"></span>
+                                <span class="slicknav_icon-bar"></span>
+                            </span>
+                        </a> -->
+                        <nav class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                            <ul>
+                                <li class="active"><a href="./index.html" role="menuitem">Home</a></li>
+                                <li><a href="./shop-grid.html" role="menuitem">Shop</a></li>
+                                <li class="slicknav_parent slicknav_collapsed">
+                                    <a href="#" role="menuitem" aria-haspopup="true" tabindex="-1"
+                                        class="slicknav_item slicknav_row" style="outline: none;">
+                                        <a href="#">Pages</a>
+                                        <span class="slicknav_arrow">►</span>
+                                    </a>
+                                    <ul class="header__menu__dropdown slicknav_hidden" role="menu" aria-hidden="true"
+                                        style="display: none;">
+                                        <li><a href="./shop-details.html" role="menuitem" tabindex="-1">Shop Details</a>
+                                        </li>
+                                        <li><a href="./shoping-cart.html" role="menuitem" tabindex="-1">Shoping Cart</a>
+                                        </li>
+                                        <li><a href="./checkout.html" role="menuitem" tabindex="-1">Check Out</a></li>
+                                        <li><a href="./blog-details.html" role="menuitem" tabindex="-1">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./blog.html" role="menuitem">Blog</a></li>
+                                <li><a href="./contact.html" role="menuitem">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+
+
+    <!-- <div class="footer">
+        <p class="center">
+            dajsdlkashdjlhakjfhsjkfajk
+        </p>
+    </div> -->
+
+    <!-- libs jquery -->
+    <script src="./libs/jquery.min.js"></script>
+
+    <!-- javascript -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
