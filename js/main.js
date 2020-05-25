@@ -119,3 +119,18 @@ $('.popup .overlay').click(function () {
 //         $(this).css("visibility", "hidden");
 //     });
 // });
+
+
+// show list ul_show_menu
+$('.check_show_menu').click(function (event) {
+    $(this).next('.ul_show_menu').toggle();
+});
+
+// change transform
+$('#menu_page').click(function () {
+    // $("#trans").style.transform = "rotate(90deg)";
+    if (document.getElementById("trans").style.transform != "rotate(90deg)") {
+        document.getElementById("trans").style.transform = "rotate(90deg)";
+    } else
+        document.getElementById("trans").style.transform = "none";
+});
