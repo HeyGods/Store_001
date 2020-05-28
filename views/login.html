@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="center fix-top-20">
+            <img src="../images/logo.png" alt="">
+        </div>
+
+        <!-- tab -->
+        <div class="menu__tab fix-top-20">
+            <ul>
+                <li class="left fix-left-50 active" data-id='1'>Đăng nhập</li>
+                <li class="right fix-right-50" data-id="2">Đăng kí</li>
+            </ul>
+        </div>
+
+        <!-- tab-1 -->
+        <div class="tab-container fix-top-50 tab-1 active">
+            <form id="signIn">
+                <div class="frame-default">
+                    <label class="" for="phone">SỐ ĐIỆN THOẠI</label>
+                    <input type="text" placeholder="Nhập số điện thoại" name="phone" id="phone" class="fix-top-5">
+                </div>
+
+                <div class="frame-default">
+                    <label class="" for="psw">MẬT KHẨU</label>
+                    <div class="inp-wrapper fix-top-5">
+                        <input type="password" class="input__pass" name="psw" id="S_in_psw" placeholder="Nhập mật khẩu">
+                        <input type="button" id="SignIn__password" class="btn__hidden__pass" value="HIỆN">
+                    </div>
+                </div>
+
+                <button type="" class="button full">ĐĂNG NHẬP</button>
+
+                <div class="right fix-top-5"><a href="./forget-psw.html" class="color__grey">Quên mật khẩu?</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- tab-2 -->
+        <div class="tab-container fix-top-50 tab-2">
+            <form id="signUp">
+                <div class="frame-default">
+                    <label for="uname" class="">TÊN NGƯỜI DÙNG</label>
+                    <input type="text" id="uname" name="uname" placeholder="Nhập họ và tên" class="fix-top-5">
+                </div>
+                <div class="frame-default">
+                    <label for="phone" class="">SỐ ĐIỆN THOẠI</label>
+                    <input type="text" name="phone" id="phone" placeholder="Nhập số điện thoại" class="fix-top-5">
+                </div>
+
+                <div class="frame-default">
+                    <label for="psw" class="">MẬT KHẨU</label>
+                    <div class="inp-wrapper fix-top-5">
+                        <input type="password" class="input__pass" name="psw" id="S_up_psw" placeholder="Nhập mật khẩu">
+                        <input type="button" id="SignUp__password" class="btn__hidden__pass" value="HIỆN">
+                    </div>
+                </div>
+
+                <button type="submit" class="button full">TẠO TÀI KHOẢN</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- libs jquery -->
+    <script src="../libs/jquery.min.js"></script>
+
+    <!-- javascript -->
+    <!-- <script src="../js/pass.js"></script> -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -11,6 +11,10 @@ ol {
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -33,27 +37,59 @@ img {
     text-align: center;
 }
 
+.color__grey {
+    color: #828282;
+}
+
+.fix-top-5 {
+    margin-top: 5px;
+}
+
 .fix-top-20 {
     margin-top: 20px;
+}
+
+.fix-top-50 {
+    margin-top: 50px;
+}
+
+.fix-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.fix-bottom-20 {
+    margin-bottom: 20px;
 }
 
 .fix-left-30 {
     margin-left: 30px;
 }
 
+.fix-left-50 {
+    margin-left: 50px;
+}
+
 .fix-right-30 {
     margin-right: 30px;
+}
+
+.fix-right-50 {
+    margin-right: 50px;
+}
+
+.fix-right-120 {
+    margin-right: 120px;
 }
 
 .select,
 select:focus {
     background: #7fad39;
     position: relative;
-    padding: 10px 25px 10px 40px;
+    padding: 10px;
     width: 100%;
     cursor: pointer;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     color: #ffffff;
     > option {
         font-size: 16px;
@@ -86,18 +122,25 @@ button:focus {
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 12px 20px;
     display: inline-block;
     border: 1px solid #b2b2b2;
     box-sizing: border-box;
     height: 44px;
     background-color: #ffffff;
+    border-radius: 4px;
     &.txt-search {
-        // border: none;
+        border-radius: 0;
         width: 75%;
         height: 41px;
     }
+    &.input__pass {
+        border-radius: 4px;
+        width: 83%;
+        border: none;
+        padding: 0 0 0 15px;
+    }
 }
+
 input[type="button"] {
     display: inline-block;
     background: #7fad39;
@@ -115,6 +158,32 @@ input[type="button"] {
         padding: 0px;
         height: 41px;
         float: right;
+    }
+    &.btn__hidden__pass {
+        // border-radius: 4px;
+        padding: 0;
+        width: 15%;
+        background-color: #ffffff;
+        color: #1e88e5;
+        border: none;
+    }
+}
+
+.button {
+    display: inline-block;
+    background: #7fad39;
+    border: 1px solid #7fad39;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 14px;
+    height: 44px;
+    padding: 14px 20px;
+    margin: 0;
+    &.full {
+        width: 100%;
     }
 }
 
@@ -165,5 +234,13 @@ h5 {
     cursor: pointer;
     position: absolute;
     right: 15px;
-    // top: 22px;
+}
+
+.frame-default {
+    height: auto;
+    margin-bottom: 16px;
+    .inp-wrapper {
+        border-radius: 4px;
+        border: 1px solid #b2b2b2;
+    }
 }

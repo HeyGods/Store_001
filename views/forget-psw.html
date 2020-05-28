@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên mật khẩu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="./login.html" class="header__left color__grey">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <p class="header__middle title">Quên mật khẩu</p>
+        <div class="trigger-popup" data-popup="popup-send-code">
+        </div>
+    </div>
+    <div class="container fix-header">
+        <form>
+            <div class="frame-default">
+                <p class=""><b>Hãy nhập số điện thoại bạn đã dùng đăng ký</b></p>
+                <input type="text" placeholder="Nhập số điện thoại" name="phone" id="phone" class="fix-top-5">
+            </div>
+            <div class="trigger-popup" data-popup="popup-send-code">
+                <button type="button" class="button full" data-popup="popup-send-code">
+                    GỬI MÃ XÁC MINH</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Popup send code -->
+    <!-- <div class="popup middle popup-send-code">
+        <div class="position">
+            <div class="inner">
+                <div class="p-body">
+                    <div class="content-popup">
+                        <span class="close-popup">
+                            <button class="btn-fix icon-cancel right fix-top-10 border-hiden"></button>
+                        </span>
+                    </div>
+                    <form action="#">
+                        <p class="center">
+                            Hệ thống vừa gửi mã OTP đến sđt <b>0908666888</b>. Xin vui lòng kiểm tra tin nhắn để xác
+                            thực.</p>
+                        <div class="wrapper-poup">
+                            <input type="text" class="txt-display-hiden-popup" name="code" id="code"
+                                placeholder="Nhập mã xác thực">
+                            <input type="button" id="certificate"
+                                class="button btn-display-hiden-popup border-hiden blue fix-text-transform"
+                                value="Xác minh">
+                        </div>
+                    </form>
+                    <p class="center change-color-gray"><a href="/"><span>Gửi lại</span></a>(30)</p>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div> -->
+
+    <!-- libs jquery -->
+    <script src="../libs/jquery.min.js"></script>
+
+    <!-- javascript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

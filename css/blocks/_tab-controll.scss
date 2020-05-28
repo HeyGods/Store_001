@@ -1,0 +1,21 @@
+.menu__tab {
+    ul {
+        justify-content: space-between;
+        li {
+            font-weight: bold;
+            color: #7fad39;
+            display: inline-block;
+            &.active {
+                border-bottom: 1px solid #7fad39;
+            }
+        }
+    }
+}
+
+.tab-container {
+    display: none;
+    &.active {
+        display: inline-block;
+        width: 100%;
+    }
+}

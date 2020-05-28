@@ -11,6 +11,10 @@ ol {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -33,27 +37,59 @@ img {
   text-align: center;
 }
 
+.color__grey {
+  color: #828282;
+}
+
+.fix-top-5 {
+  margin-top: 5px;
+}
+
 .fix-top-20 {
   margin-top: 20px;
+}
+
+.fix-top-50 {
+  margin-top: 50px;
+}
+
+.fix-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.fix-bottom-20 {
+  margin-bottom: 20px;
 }
 
 .fix-left-30 {
   margin-left: 30px;
 }
 
+.fix-left-50 {
+  margin-left: 50px;
+}
+
 .fix-right-30 {
   margin-right: 30px;
+}
+
+.fix-right-50 {
+  margin-right: 50px;
+}
+
+.fix-right-120 {
+  margin-right: 120px;
 }
 
 .select,
 select:focus {
   background: #7fad39;
   position: relative;
-  padding: 10px 25px 10px 40px;
+  padding: 10px;
   width: 100%;
   cursor: pointer;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
 }
 
@@ -101,19 +137,28 @@ button:focus.full {
 input[type="text"],
 input[type="password"] {
   width: 100%;
-  padding: 12px 20px;
   display: inline-block;
   border: 1px solid #b2b2b2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 44px;
   background-color: #ffffff;
+  border-radius: 4px;
 }
 
 input[type="text"].txt-search,
 input[type="password"].txt-search {
+  border-radius: 0;
   width: 75%;
   height: 41px;
+}
+
+input[type="text"].input__pass,
+input[type="password"].input__pass {
+  border-radius: 4px;
+  width: 83%;
+  border: none;
+  padding: 0 0 0 15px;
 }
 
 input[type="button"] {
@@ -135,6 +180,33 @@ input[type="button"].btn-search {
   padding: 0px;
   height: 41px;
   float: right;
+}
+
+input[type="button"].btn__hidden__pass {
+  padding: 0;
+  width: 15%;
+  background-color: #ffffff;
+  color: #1e88e5;
+  border: none;
+}
+
+.button {
+  display: inline-block;
+  background: #7fad39;
+  border: 1px solid #7fad39;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 14px;
+  height: 44px;
+  padding: 14px 20px;
+  margin: 0;
+}
+
+.button.full {
+  width: 100%;
 }
 
 a {
@@ -185,6 +257,16 @@ h5 {
   cursor: pointer;
   position: absolute;
   right: 15px;
+}
+
+.frame-default {
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.frame-default .inp-wrapper {
+  border-radius: 4px;
+  border: 1px solid #b2b2b2;
 }
 
 .back-ground-banner {
@@ -376,7 +458,6 @@ h5 > a {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 15px;
-  min-width: 44px;
   height: 32px;
 }
 
@@ -388,8 +469,8 @@ h5 > a {
 
 .header__middle.title,
 .header__middle > .title {
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .header__right {
@@ -505,7 +586,6 @@ h5 > a {
 }
 
 .menu__cart ul li {
-  list-style: none;
   display: inline-block;
   margin-right: 15px;
 }
@@ -590,10 +670,6 @@ h5 > a {
   transition: all, 0.3s;
 }
 
-.menu__widget .header__language ul li {
-  list-style: none;
-}
-
 .menu__widget .header__language ul li a {
   font-size: 14px;
   color: #ffffff;
@@ -633,6 +709,11 @@ h5 > a {
   background: #ccc;
 }
 
+.avatar__user img {
+  height: 50px;
+  width: 50px;
+}
+
 .slicknav_menu {
   background: transparent;
   padding: 0;
@@ -648,7 +729,6 @@ h5 > a {
 }
 
 .slicknav_menu .slicknav_nav ul {
-  list-style: none;
   overflow: hidden;
   padding: 0;
 }
@@ -663,7 +743,6 @@ h5 > a {
 }
 
 .slicknav_nav li,
-.slicknav_nav ul,
 .slicknav_nav a {
   display: block;
 }
@@ -680,5 +759,59 @@ h5 > a {
 
 .ul_show_menu {
   display: none;
+}
+
+.fix__display {
+  font-weight: 300 !important;
+  margin-left: 10px !important;
+}
+
+.menu__social {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.menu__social a {
+  font-size: 14px;
+  display: inline-block;
+  color: #1c1c1c;
+  margin-right: 20px;
+}
+
+.menu__contact {
+  padding: 10px 0 13px;
+}
+
+.menu__contact ul li {
+  font-size: 14px;
+  color: #1c1c1c;
+  position: relative;
+  line-height: 30px;
+}
+
+.menu__tab ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__tab ul li {
+  font-weight: bold;
+  color: #7fad39;
+  display: inline-block;
+}
+
+.menu__tab ul li.active {
+  border-bottom: 1px solid #7fad39;
+}
+
+.tab-container {
+  display: none;
+}
+
+.tab-container.active {
+  display: inline-block;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

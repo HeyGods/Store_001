@@ -116,6 +116,9 @@
         <div class="position">
             <div class="inner">
                 <div class="p-body">
+                    <div class="avatar__user center">
+                        <img src="./images/avatar.png" alt="">
+                    </div>
                     <div class="menu__cart">
                         <ul class="fix-top-20">
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
@@ -135,30 +138,34 @@
                             <span class=""><i class="fas fa-chevron-down"></i></span>
                         </div>
                         <div class="header__auth">
-                            <a href="#"><i class="fa fa-user"></i> Login</a>
+                            <a href="./views/login.html"><i class="fa fa-user"></i> Login</a>
                         </div>
                     </div>
 
                     <div class="slicknav_menu">
-                        <nav class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                        <nav class="slicknav_nav" aria-hidden="true" role="menu">
                             <ul>
                                 <li class="active"><a href="./index.html" role="menuitem">Home</a></li>
                                 <li><a href="./views/shop-grid.html" role="menuitem">Shop</a></li>
                                 <li class="">
                                     <a href="#" class="check_show_menu" id="menu_page">Pages<span>
                                             <i class="fas fa-caret-right" id="trans"></i></span> </a>
-                                    <ul class="ul_show_menu" role="menu" aria-hidden="true" style="display: none;">
-                                        <li><a href="./views/shop-details.html" role="menuitem" tabindex="-1">
-                                            Shop Details</a>
+                                    <ul class="ul_show_menu" role="menu" aria-hidden="true">
+                                        <li><a href="./views/shop-details.html" class="fix__display" role="menuitem"
+                                                tabindex="-1">
+                                                Shop Details</a>
                                         </li>
-                                        <li><a href="./views/shoping-cart.html" role="menuitem" tabindex="-1">
-                                            Shoping Cart</a>
+                                        <li><a href="./views/shoping-cart.html" class="fix__display" role="menuitem"
+                                                tabindex="-1">
+                                                Shoping Cart</a>
                                         </li>
-                                        <li><a href="./views/checkout.html" role="menuitem" tabindex="-1">
-                                            Check Out</a>
+                                        <li><a href="./views/checkout.html" class="fix__display" role="menuitem"
+                                                tabindex="-1">
+                                                Check Out</a>
                                         </li>
-                                        <li><a href="./views/blog-details.html" role="menuitem" tabindex="-1">
-                                            Blog Details</a>
+                                        <li><a href="./views/blog-details.html" class="fix__display" role="menuitem"
+                                                tabindex="-1">
+                                                Blog Details</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -167,6 +174,21 @@
                             </ul>
                         </nav>
                     </div>
+
+                    <div class="menu__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    </div>
+                    <div class="menu__contact">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i> thanhgio@aothuatt.com</li>
+                            <li>Giá rẻ - Uy tín - Chất lượng</li>
+                        </ul>
+                    </div>
+
+
                 </div>
             </div>
             <div class="overlay"></div>
@@ -185,6 +207,7 @@
 
     <!-- javascript -->
     <script src="./js/main.js"></script>
+    <script src="./js/slide.js"></script>
 </body>
 
 </html>
